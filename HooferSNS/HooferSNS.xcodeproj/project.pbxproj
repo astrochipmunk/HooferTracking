@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3045BEFC1C0F9C640020E834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BEFB1C0F9C640020E834 /* AppDelegate.swift */; };
-		3045BEFE1C0F9C640020E834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BEFD1C0F9C640020E834 /* ViewController.swift */; };
 		3045BF011C0F9C640020E834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045BEFF1C0F9C640020E834 /* Main.storyboard */; };
 		3045BF031C0F9C640020E834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF021C0F9C640020E834 /* Assets.xcassets */; };
 		3045BF061C0F9C640020E834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF041C0F9C640020E834 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,10 @@
 		3045BF6C1C0FA6AE0020E834 /* gps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6A1C0FA6AE0020E834 /* gps@2x.png */; };
 		3045BF6F1C0FAD230020E834 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6D1C0FAD230020E834 /* stats.png */; };
 		3045BF701C0FAD230020E834 /* stats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6E1C0FAD230020E834 /* stats@2x.png */; };
+		3045BF721C0FAF010020E834 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF711C0FAF010020E834 /* HomeViewController.swift */; };
+		3045BF741C0FB2730020E834 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF731C0FB2730020E834 /* StatsViewController.swift */; };
+		3045BF761C0FB3470020E834 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF751C0FB3470020E834 /* LogInViewController.swift */; };
+		3045BF7B1C0FB4170020E834 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */; };
 		B7C3FD6E3657F1FE2AAFE813 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE6E0E5CAEFA9487D426468 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +48,6 @@
 		2FC505ECBEE82493A9A0BB33 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3045BEF81C0F9C640020E834 /* HooferSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HooferSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3045BEFB1C0F9C640020E834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3045BEFD1C0F9C640020E834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3045BF001C0F9C640020E834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3045BF021C0F9C640020E834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3045BF051C0F9C640020E834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +65,10 @@
 		3045BF6A1C0FA6AE0020E834 /* gps@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gps@2x.png"; sourceTree = "<group>"; };
 		3045BF6D1C0FAD230020E834 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats.png; sourceTree = "<group>"; };
 		3045BF6E1C0FAD230020E834 /* stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stats@2x.png"; sourceTree = "<group>"; };
+		3045BF711C0FAF010020E834 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3045BF731C0FB2730020E834 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		3045BF751C0FB3470020E834 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		454D46A8FB7936C41ADEC3AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,12 +123,14 @@
 		3045BEFA1C0F9C640020E834 /* HooferSNS */ = {
 			isa = PBXGroup;
 			children = (
-				3045BF641C0FA4C30020E834 /* icons */,
 				3045BEFB1C0F9C640020E834 /* AppDelegate.swift */,
-				3045BF291C0F9D7B0020E834 /* HooferSNS-Bridging-Header.h */,
-				3045BEFD1C0F9C640020E834 /* ViewController.swift */,
 				3045BEFF1C0F9C640020E834 /* Main.storyboard */,
+				3045BF771C0FB3670020E834 /* Home */,
+				3045BF781C0FB39F0020E834 /* GPS */,
+				3045BF791C0FB3B60020E834 /* Stats */,
+				3045BF641C0FA4C30020E834 /* icons */,
 				3045BF021C0F9C640020E834 /* Assets.xcassets */,
+				3045BF291C0F9D7B0020E834 /* HooferSNS-Bridging-Header.h */,
 				3045BF041C0F9C640020E834 /* LaunchScreen.storyboard */,
 				3045BF071C0F9C640020E834 /* Info.plist */,
 			);
@@ -158,6 +166,31 @@
 				3045BF661C0FA5130020E834 /* house@2x.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		3045BF771C0FB3670020E834 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3045BF711C0FAF010020E834 /* HomeViewController.swift */,
+				3045BF751C0FB3470020E834 /* LogInViewController.swift */,
+				3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		3045BF781C0FB39F0020E834 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GPS;
+			sourceTree = "<group>";
+		};
+		3045BF791C0FB3B60020E834 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				3045BF731C0FB2730020E834 /* StatsViewController.swift */,
+			);
+			name = Stats;
 			sourceTree = "<group>";
 		};
 		884F14E2A438AAD80364DD3A /* Pods */ = {
@@ -365,8 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3045BEFE1C0F9C640020E834 /* ViewController.swift in Sources */,
 				3045BEFC1C0F9C640020E834 /* AppDelegate.swift in Sources */,
+				3045BF741C0FB2730020E834 /* StatsViewController.swift in Sources */,
+				3045BF761C0FB3470020E834 /* LogInViewController.swift in Sources */,
+				3045BF721C0FAF010020E834 /* HomeViewController.swift in Sources */,
+				3045BF7B1C0FB4170020E834 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
