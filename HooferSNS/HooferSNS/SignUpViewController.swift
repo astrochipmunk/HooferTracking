@@ -16,13 +16,12 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUp(sender: AnyObject) {
         
-        func signUp() {
+//        func sign() {
             var user = PFUser()
             user.username = usernameField.text
             user.password = passwordField.text
             user.email = emailField.text
-            
-            
+      
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
                 if let error = error {
@@ -34,7 +33,7 @@ class SignUpViewController: UIViewController {
                     self.performSegueWithIdentifier("homeFromSignUp", sender: self)
                 }
             }
-        }
+//        }
 
     }
        override func viewDidLoad() {

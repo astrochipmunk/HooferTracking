@@ -154,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2n9-Xb-ce0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="-956"/>
+            <point key="canvasLocation" x="2181" y="-1192"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="QjA-b1-fTF">
@@ -208,6 +208,9 @@
                                 <rect key="frame" x="277" y="350" width="47" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Sign in"/>
+                                <connections>
+                                    <action selector="signIn:" destination="Vcm-Pu-eDG" eventType="touchUpInside" id="ehZ-0U-Y1U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -225,10 +228,14 @@
                             <constraint firstItem="KRC-mt-uSp" firstAttribute="top" secondItem="lR4-zp-yWp" secondAttribute="bottom" constant="35" id="yLN-s0-4Zn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="lR4-zp-yWp" id="aTd-6U-2WK"/>
+                        <outlet property="usernameField" destination="6Tf-5n-2hK" id="J8V-Zf-H7w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY3-uP-EAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="-307"/>
+            <point key="canvasLocation" x="2313" y="-248"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="L4y-fv-cig">

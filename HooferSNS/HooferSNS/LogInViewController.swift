@@ -9,7 +9,27 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
+    
+    @IBAction func signIn(sender: AnyObject) {
+        
+        var usernameText = usernameField.text!
+        var passwordText = passwordField.text!
+        
+        PFUser.logInWithUsernameInBackground(usernameText, password:passwordText) {
+            (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+                // Do stuff after successful login.
+                self.navigationController?.popToRootViewControllerAnimated(true)
+                print("Log in successfully")
+            } else {
+                // The login failed. Check error to see why.
+            }
+        }
+    }
+   
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var usernameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
