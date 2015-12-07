@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rXB-si-b2F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rXB-si-b2F">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="1542" y="354"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Splash-->
         <scene sceneID="xJq-x7-2QS">
             <objects>
-                <viewController id="txF-Wp-uCo" sceneMemberID="viewController">
+                <viewController title="Home Splash" id="txF-Wp-uCo" customClass="HomeSplashViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DSz-q1-Ook"/>
                         <viewControllerLayoutGuide type="bottom" id="qih-ac-Hml"/>
@@ -36,8 +37,48 @@
                     <view key="view" contentMode="scaleToFill" id="c5X-Bq-Jeq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL0-BV-cxu">
+                                <rect key="frame" x="279" y="356" width="43" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weather Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPb-Wb-PkM">
+                                <rect key="frame" x="198" y="163" width="205" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kq-xW-391">
+                                <rect key="frame" x="280" y="397" width="40" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6P6-72-lGG">
+                                <rect key="frame" x="161" y="230" width="279" height="87"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8kq-xW-391" firstAttribute="top" secondItem="NL0-BV-cxu" secondAttribute="bottom" constant="20" id="05S-s3-wML"/>
+                            <constraint firstItem="6P6-72-lGG" firstAttribute="centerX" secondItem="c5X-Bq-Jeq" secondAttribute="centerX" constant="0.5" id="3oS-bJ-aJi"/>
+                            <constraint firstItem="6P6-72-lGG" firstAttribute="top" secondItem="MPb-Wb-PkM" secondAttribute="bottom" constant="46" id="5iX-ik-XKN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6P6-72-lGG" secondAttribute="trailing" constant="140" id="IPa-AW-PsG"/>
+                            <constraint firstItem="MPb-Wb-PkM" firstAttribute="leading" secondItem="c5X-Bq-Jeq" secondAttribute="leadingMargin" constant="178" id="TAG-26-ZTI"/>
+                            <constraint firstItem="qih-ac-Hml" firstAttribute="top" secondItem="8kq-xW-391" secondAttribute="bottom" constant="133" id="Xj6-rF-TKJ"/>
+                            <constraint firstItem="NL0-BV-cxu" firstAttribute="centerX" secondItem="6P6-72-lGG" secondAttribute="centerX" constant="0.5" id="ZVg-eA-dO0"/>
+                            <constraint firstItem="6P6-72-lGG" firstAttribute="leading" secondItem="c5X-Bq-Jeq" secondAttribute="leadingMargin" constant="141" id="dAt-DF-SdP"/>
+                            <constraint firstItem="MPb-Wb-PkM" firstAttribute="top" secondItem="DSz-q1-Ook" secondAttribute="bottom" constant="99" id="hyM-b9-gEW"/>
+                            <constraint firstItem="8kq-xW-391" firstAttribute="centerX" secondItem="NL0-BV-cxu" secondAttribute="centerX" id="p6I-Wz-DoF"/>
+                            <constraint firstItem="NL0-BV-cxu" firstAttribute="top" secondItem="6P6-72-lGG" secondAttribute="bottom" constant="39" id="pPs-JY-fOT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lvg-VP-W4Q">
                         <barButtonItem key="rightBarButtonItem" title="Sign In" id="XJh-s9-VQJ">
@@ -46,6 +87,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="Wind" destination="8kq-xW-391" id="UJU-fX-6Dj"/>
+                        <outlet property="condition" destination="MPb-Wb-PkM" id="gHN-kA-j0c"/>
+                        <outlet property="icon" destination="6P6-72-lGG" id="uMb-Nn-Xni"/>
+                        <outlet property="temp" destination="NL0-BV-cxu" id="VBH-JW-NN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWj-ww-j3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,6 +258,6 @@
         <image name="stats.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QLO-ei-8fn"/>
+        <segue reference="JdT-Gm-09q"/>
     </inferredMetricsTieBreakers>
 </document>

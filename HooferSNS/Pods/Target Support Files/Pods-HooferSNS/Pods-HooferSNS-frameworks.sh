@@ -82,3 +82,18 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-HooferSNS/Bolts.framework"
+  install_framework "Pods-HooferSNS/Parse.framework"
+  install_framework "Pods-HooferSNS/Alamofire.framework"
+  install_framework "Pods-HooferSNS/AlamofireImage.framework"
+  install_framework "Pods-HooferSNS/SwiftyJSON.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-HooferSNS/Bolts.framework"
+  install_framework "Pods-HooferSNS/Parse.framework"
+  install_framework "Pods-HooferSNS/Alamofire.framework"
+  install_framework "Pods-HooferSNS/AlamofireImage.framework"
+  install_framework "Pods-HooferSNS/SwiftyJSON.framework"
+fi

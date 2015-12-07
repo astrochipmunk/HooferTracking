@@ -20,7 +20,14 @@
 		3045BF6C1C0FA6AE0020E834 /* gps@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6A1C0FA6AE0020E834 /* gps@2x.png */; };
 		3045BF6F1C0FAD230020E834 /* stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6D1C0FAD230020E834 /* stats.png */; };
 		3045BF701C0FAD230020E834 /* stats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3045BF6E1C0FAD230020E834 /* stats@2x.png */; };
-		B7C3FD6E3657F1FE2AAFE813 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE6E0E5CAEFA9487D426468 /* libPods.a */; };
+		6A90502C1C14CA8E00303362 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90502A1C14CA8E00303362 /* Alamofire.framework */; };
+		6A90502D1C14CA8E00303362 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A90502B1C14CA8E00303362 /* AlamofireImage.framework */; };
+		6ABC62571C137087005FAA90 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC62561C137087005FAA90 /* SwiftyJSON.framework */; };
+		6ABC62591C1383DA005FAA90 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC62581C1383DA005FAA90 /* Parse.framework */; };
+		6ABC625B1C1383DD005FAA90 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ABC625A1C1383DD005FAA90 /* Bolts.framework */; };
+		6ABC625F1C14AB2F005FAA90 /* HomeSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABC625E1C14AB2F005FAA90 /* HomeSplashViewController.swift */; };
+		7DFF05F32A3D4E9FCD02D885 /* Pods_HooferSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97C9F6DEE4839B6137B4548 /* Pods_HooferSNS.framework */; };
+		BC63DBDF9BA6115F56D571AA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE6DC9BE5482582DF520A49 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BE6E0E5CAEFA9487D426468 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC505ECBEE82493A9A0BB33 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3045BEF81C0F9C640020E834 /* HooferSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HooferSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3045BEFB1C0F9C640020E834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +70,14 @@
 		3045BF6D1C0FAD230020E834 /* stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats.png; sourceTree = "<group>"; };
 		3045BF6E1C0FAD230020E834 /* stats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stats@2x.png"; sourceTree = "<group>"; };
 		454D46A8FB7936C41ADEC3AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6A90502A1C14CA8E00303362 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		6A90502B1C14CA8E00303362 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "Pods/../build/Debug-iphoneos/AlamofireImage.framework"; sourceTree = "<group>"; };
+		6ABC62561C137087005FAA90 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		6ABC62581C1383DA005FAA90 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "Pods/../build/Debug-iphoneos/Parse.framework"; sourceTree = "<group>"; };
+		6ABC625A1C1383DD005FAA90 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Pods/../build/Debug-iphoneos/Bolts.framework"; sourceTree = "<group>"; };
+		6ABC625E1C14AB2F005FAA90 /* HomeSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSplashViewController.swift; sourceTree = "<group>"; };
+		9FE6DC9BE5482582DF520A49 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97C9F6DEE4839B6137B4548 /* Pods_HooferSNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HooferSNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +85,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7C3FD6E3657F1FE2AAFE813 /* libPods.a in Frameworks */,
+				6A90502C1C14CA8E00303362 /* Alamofire.framework in Frameworks */,
+				6A90502D1C14CA8E00303362 /* AlamofireImage.framework in Frameworks */,
+				6ABC625B1C1383DD005FAA90 /* Bolts.framework in Frameworks */,
+				6ABC62591C1383DA005FAA90 /* Parse.framework in Frameworks */,
+				6ABC62571C137087005FAA90 /* SwiftyJSON.framework in Frameworks */,
+				BC63DBDF9BA6115F56D571AA /* Pods.framework in Frameworks */,
+				7DFF05F32A3D4E9FCD02D885 /* Pods_HooferSNS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +141,7 @@
 				3045BEFB1C0F9C640020E834 /* AppDelegate.swift */,
 				3045BF291C0F9D7B0020E834 /* HooferSNS-Bridging-Header.h */,
 				3045BEFD1C0F9C640020E834 /* ViewController.swift */,
+				6ABC625E1C14AB2F005FAA90 /* HomeSplashViewController.swift */,
 				3045BEFF1C0F9C640020E834 /* Main.storyboard */,
 				3045BF021C0F9C640020E834 /* Assets.xcassets */,
 				3045BF041C0F9C640020E834 /* LaunchScreen.storyboard */,
@@ -172,7 +193,13 @@
 		ED417A9B5BB4BD34B1731FC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BE6E0E5CAEFA9487D426468 /* libPods.a */,
+				6A90502A1C14CA8E00303362 /* Alamofire.framework */,
+				6A90502B1C14CA8E00303362 /* AlamofireImage.framework */,
+				6ABC625A1C1383DD005FAA90 /* Bolts.framework */,
+				6ABC62581C1383DA005FAA90 /* Parse.framework */,
+				6ABC62561C137087005FAA90 /* SwiftyJSON.framework */,
+				9FE6DC9BE5482582DF520A49 /* Pods.framework */,
+				C97C9F6DEE4839B6137B4548 /* Pods_HooferSNS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,7 +352,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HooferSNS/Pods-HooferSNS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2821D6F56CCC3BD7B4680588 /* Embed Pods Frameworks */ = {
@@ -340,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HooferSNS/Pods-HooferSNS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4C9337DBA9DF1C32AE447F58 /* Check Pods Manifest.lock */ = {
@@ -365,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABC625F1C14AB2F005FAA90 /* HomeSplashViewController.swift in Sources */,
 				3045BEFE1C0F9C640020E834 /* ViewController.swift in Sources */,
 				3045BEFC1C0F9C640020E834 /* AppDelegate.swift in Sources */,
 			);
@@ -507,6 +535,10 @@
 			baseConfigurationReference = 454D46A8FB7936C41ADEC3AF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HooferSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyuanchen.HooferSNS;
@@ -520,6 +552,10 @@
 			baseConfigurationReference = 2FC505ECBEE82493A9A0BB33 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = HooferSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyuanchen.HooferSNS;

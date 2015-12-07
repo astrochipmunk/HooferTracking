@@ -82,3 +82,12 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-HooferSNSUITests/Bolts.framework"
+  install_framework "Pods-HooferSNSUITests/Parse.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-HooferSNSUITests/Bolts.framework"
+  install_framework "Pods-HooferSNSUITests/Parse.framework"
+fi
