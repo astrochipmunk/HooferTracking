@@ -23,6 +23,7 @@
 		3045BF741C0FB2730020E834 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF731C0FB2730020E834 /* StatsViewController.swift */; };
 		3045BF761C0FB3470020E834 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF751C0FB3470020E834 /* LogInViewController.swift */; };
 		3045BF7B1C0FB4170020E834 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */; };
+		3067070D1C14F91B00D7125D /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067070C1C14F91B00D7125D /* LogOutViewController.swift */; };
 		B7C3FD6E3657F1FE2AAFE813 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE6E0E5CAEFA9487D426468 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		3045BF731C0FB2730020E834 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		3045BF751C0FB3470020E834 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3067070C1C14F91B00D7125D /* LogOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 		454D46A8FB7936C41ADEC3AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 				3045BF711C0FAF010020E834 /* HomeViewController.swift */,
 				3045BF751C0FB3470020E834 /* LogInViewController.swift */,
 				3045BF7A1C0FB4170020E834 /* SignUpViewController.swift */,
+				3067070C1C14F91B00D7125D /* LogOutViewController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				TargetAttributes = {
 					3045BEF71C0F9C640020E834 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = MT7CSV95PR;
 					};
 					3045BF0B1C0F9C640020E834 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -398,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3067070D1C14F91B00D7125D /* LogOutViewController.swift in Sources */,
 				3045BEFC1C0F9C640020E834 /* AppDelegate.swift in Sources */,
 				3045BF741C0FB2730020E834 /* StatsViewController.swift in Sources */,
 				3045BF761C0FB3470020E834 /* LogInViewController.swift in Sources */,
@@ -543,10 +548,13 @@
 			baseConfigurationReference = 454D46A8FB7936C41ADEC3AF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HooferSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyuanchen.HooferSNS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HooferSNS/HooferSNS-Bridging-Header.h";
 			};
 			name = Debug;
@@ -556,10 +564,13 @@
 			baseConfigurationReference = 2FC505ECBEE82493A9A0BB33 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HooferSNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoyuanchen.HooferSNS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "HooferSNS/HooferSNS-Bridging-Header.h";
 			};
 			name = Release;

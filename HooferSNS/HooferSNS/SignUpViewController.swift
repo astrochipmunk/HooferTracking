@@ -25,10 +25,10 @@ class SignUpViewController: UIViewController {
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool, error: NSError?) -> Void in
                 if let error = error {
+                    
                     let errorString = error.userInfo["error"] as? NSString
-                    // Show the errorString somewhere and let the user try again.
+                    
                 } else {
-                    // Hooray! Let them use the app now.
                     
                     self.performSegueWithIdentifier("homeFromSignUp", sender: self)
                 }
@@ -40,11 +40,12 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
             }
+    
 
-    override func didReceiveMemoryWarning() {
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+        }
     
 
 
