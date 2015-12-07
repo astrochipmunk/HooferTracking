@@ -11,13 +11,13 @@ import CoreData
 
 class Run {
     
-     var duration = 0.0
-     var avgSpeed = 0.0
-     var maxSpeed = 0.0
-     var altChange = 0.0
-     var distance = 0.0
-     var timestamp = 0.0
-     var locations = NSOrderedSet()
+     var duration = ""
+     var avgSpeed = ""
+     var maxSpeed = ""
+     var altChange = ""
+     var distance = ""
+     var timestamp = NSDate()
+  //   var locations = NSOrderedSet()
     
 }
 

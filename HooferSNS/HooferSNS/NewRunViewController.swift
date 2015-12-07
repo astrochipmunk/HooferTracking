@@ -12,6 +12,7 @@ import CoreLocation
 import HealthKit
 import CoreData
 
+
 class NewRunViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: GMSMapView!
@@ -227,6 +228,7 @@ class NewRunViewController: UIViewController, GMSMapViewDelegate, CLLocationMana
         let save = UIAlertAction(title: "Save", style: UIAlertActionStyle.Default) { (alertAction) -> Void in
             self.saveRun();
             self.speedCount.removeAll(keepCapacity: false);
+            self.performSegueWithIdentifier("showRun", sender: UIButton.self)
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alertAction) -> Void in
             
@@ -237,7 +239,20 @@ class NewRunViewController: UIViewController, GMSMapViewDelegate, CLLocationMana
          presentViewController(actionSheet, animated: true, completion: nil);
         
     }
-    
+    override func viewWillDisappear(animated: Bool) {
+        mapView.removeObserver(self, forKeyPath: "myLocation", context: nil);
+        mapView.delegate = nil;
+        
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! ShowRunViewController
+        vc.ac = altitudeChange.text!
+        vc.a_s = String(averageSpeed())
+        vc.t = String(seconds)
+        vc.d = String(distance)
+        vc.da = NSDate()
+        vc.ms = maxSpeed.text!
+    }
     func averageSpeed() -> Double {
         var total = 0.0
         for x in speedCount {
@@ -248,33 +263,40 @@ class NewRunViewController: UIViewController, GMSMapViewDelegate, CLLocationMana
     
     func saveRun() {
         // 1
-//        let entity = NSEntityDescription.entityForName("Run.swift", inManagedObjectContext: managedObjectContext!)
-//        let savedRun = Run(entity: entity!, insertIntoManagedObjectContext:managedObjectContext!)
-//        let savedRun = NSEntityDescription.insertNewObjectForEntityForName("HooferSNS.Run", inManagedObjectContext: managedObjectContext!) as! Run
-//        
-//        savedRun.distance = distance
-//        savedRun.duration = seconds
-//        let ms = (Int)(maxSpeed.text!)
-//        savedRun.maxSpeed = NSNumber(integer: ms!);
-//        let ac = (Int)(altitudeChange.text!)
-//        savedRun.altChange = NSNumber(integer: ac!)
-//        let a_s = Int(averageSpeed())
-//        savedRun.avgSpeed = NSNumber (integer: a_s);
-//        savedRun.timestamp = NSDate()
+        
+        var savedRun = PFObject(className: "Run");
+        let ms = maxSpeed.text!
+        let ac = altitudeChange.text!
+        let a_s = String(averageSpeed())
+        savedRun["distance"] = distance
+        savedRun["duration"] = seconds
+        savedRun["maxSpeed"] = ms
+        savedRun["avgSpeed"] = a_s
+        savedRun["altChange"] = ac
+        savedRun["timestamp"] = NSDate()
+        
         
         // 2
         var savedLocations = [Location]()
         for location in myLocations {
-            let savedLocation = NSEntityDescription.insertNewObjectForEntityForName("Location",
-                inManagedObjectContext: managedObjectContext!) as! Location
+            let savedLocation = Location();
             savedLocation.timestamp = location.timestamp
             savedLocation.latitude = location.coordinate.latitude
             savedLocation.longitude = location.coordinate.longitude
             savedLocations.append(savedLocation)
         }
         
-//        savedRun.locations = NSOrderedSet(array: savedLocations)
-//        run = savedRun
+       // savedRun["locations"] = savedLocations
+        
+        savedRun.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
+      self.run = savedRun as? Run
 //        
     
     }

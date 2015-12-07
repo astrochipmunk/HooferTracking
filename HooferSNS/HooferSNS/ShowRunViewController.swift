@@ -12,6 +12,7 @@ import HealthKit
 
 class ShowRunViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
     
+    @IBOutlet weak var mapView: GMSMapView!
     
     @IBOutlet weak var averageSpeed: UILabel!
 
@@ -24,7 +25,21 @@ class ShowRunViewController: UIViewController, GMSMapViewDelegate, CLLocationMan
     @IBOutlet weak var distance: UILabel!
     
     @IBOutlet weak var timeStamp: UILabel!
+    var a_s: String?
+    var ms: String?
+    var t: String?
+    var ac: String?
+    var d: String?
+    var da: NSDate?
+    
     override func viewDidLoad() {
+        super.viewDidLoad()
+        averageSpeed.text = a_s
+        time.text = t
+        maxSpeed.text = ms
+        altitudeChange.text = ac
+        distance.text = d
+        timeStamp.text = String(da)
         
     }
     

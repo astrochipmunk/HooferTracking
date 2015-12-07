@@ -7,14 +7,14 @@
 //
 
 import Foundation
-import CoreData
 
-class Location: NSManagedObject {
+
+class Location {
     
-    @NSManaged var timestamp: NSDate
-    @NSManaged var latitude: NSNumber
-    @NSManaged var longitude: NSNumber
-    @NSManaged var run: NSManagedObject
+    var timestamp = NSDate()
+    var latitude = 0.0
+    var longitude = 0.0
+    var run = Run();
     
 }
 
