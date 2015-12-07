@@ -30,7 +30,8 @@ class SignUpViewController: UIViewController {
                     
                 } else {
                     
-                    self.performSegueWithIdentifier("homeFromSignUp", sender: self)
+//                    self.performSegueWithIdentifier("homeFromSignUp", sender: self)
+                    self.navigationController?.popToRootViewControllerAnimated(true)
                 }
             }
 //        }
