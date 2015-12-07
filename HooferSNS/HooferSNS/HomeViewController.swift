@@ -25,37 +25,42 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         print(PFUser.currentUser())
-        if(PFUser.currentUser() !== nil){
-            
-        self.navigationItem.rightBarButtonItem?.title = "Log out"
-
-        }else{
-            
-        self.navigationItem.rightBarButtonItem?.title = "Sign In"
-            
-        }
+       
         // Do any additional setup after loading the view.
     }
- 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if(PFUser.currentUser() !== nil){
+            
+            self.navigationItem.rightBarButtonItem?.title = "Log out"
+            
+        }else{
+            
+            self.navigationItem.rightBarButtonItem?.title = "Sign In"
+            
+        }
+        self.navigationItem.setHidesBackButton(true, animated: animated)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if (segue.identifier == "logInFromHome") {
-//            // pass data to next view
-//            var lvc = segue.destinationViewController as! LogInViewController;
-//            lvc.hidesBottomBarWhenPushed = true
-//        }
-//        if (segue.identifier == "logOut") {
-//            // pass data to next view
-//            var lvc = segue.destinationViewController as! LogOutViewController;
-//            lvc.hidesBottomBarWhenPushed = true
-//        }
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "logInFromHome") {
+            // pass data to next view
+            var lvc = segue.destinationViewController as! LogInViewController;
+            lvc.tabBarController?.hidesBottomBarWhenPushed = true
+        }
+        if (segue.identifier == "logOut") {
+            // pass data to next view
+            var lvc = segue.destinationViewController as! LogOutViewController;
+            lvc.tabBarController?.hidesBottomBarWhenPushed = true
+        }
+    }
 
 
 

@@ -60,7 +60,7 @@
         <!--Log Out View Controller-->
         <scene sceneID="y3y-Mh-gzE">
             <objects>
-                <viewController id="Oe5-l2-6q2" customClass="LogOutViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Oe5-l2-6q2" customClass="LogOutViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQg-1O-MJc"/>
                         <viewControllerLayoutGuide type="bottom" id="Zt3-B8-ycw"/>
@@ -92,7 +92,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="T8y-Ld-3q9">
             <objects>
-                <viewController id="HJf-O1-bXe" customClass="SignUpViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="HJf-O1-bXe" customClass="SignUpViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="joi-st-1Wy"/>
                         <viewControllerLayoutGuide type="bottom" id="fYe-IB-wTu"/>
@@ -196,7 +196,7 @@
         <!--Log In View Controller-->
         <scene sceneID="QjA-b1-fTF">
             <objects>
-                <viewController id="Vcm-Pu-eDG" customClass="LogInViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Vcm-Pu-eDG" customClass="LogInViewController" customModule="HooferSNS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="usJ-Ba-zt6"/>
                         <viewControllerLayoutGuide type="bottom" id="huO-wd-cM2"/>
@@ -268,7 +268,6 @@
                     <connections>
                         <outlet property="passwordField" destination="lR4-zp-yWp" id="aTd-6U-2WK"/>
                         <outlet property="usernameField" destination="6Tf-5n-2hK" id="J8V-Zf-H7w"/>
-                        <segue destination="txF-Wp-uCo" kind="show" identifier="homeFromLogIn" id="IbI-Du-stm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY3-uP-EAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -298,6 +297,7 @@
         <!--Home-->
         <scene sceneID="o1F-Ra-9xk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OwO-v6-bkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RxT-wn-s32" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.png" id="NtI-5t-okR"/>
                     <toolbarItems/>
@@ -311,9 +311,8 @@
                         <segue destination="txF-Wp-uCo" kind="relationship" relationship="rootViewController" id="9hi-sr-zqI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OwO-v6-bkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-307"/>
+            <point key="canvasLocation" x="746" y="-297"/>
         </scene>
         <!--GPS-->
         <scene sceneID="2Ui-sy-0f2">
@@ -387,7 +386,7 @@
         <image name="stats.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9hi-sr-zqI"/>
+        <segue reference="BUa-sb-M44"/>
         <segue reference="I9o-Rr-95A"/>
     </inferredMetricsTieBreakers>
 </document>
