@@ -186,7 +186,6 @@
                         <outlet property="emailField" destination="68w-aR-ldk" id="RMJ-Fc-LMm"/>
                         <outlet property="passwordField" destination="Bnj-4h-CH2" id="wUD-0e-kBJ"/>
                         <outlet property="usernameField" destination="VmK-o9-sUl" id="UZU-pH-bjG"/>
-                        <segue destination="txF-Wp-uCo" kind="show" identifier="homeFromSignUp" id="BUa-sb-M44"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2n9-Xb-ce0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,7 +385,6 @@
         <image name="stats.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BUa-sb-M44"/>
         <segue reference="I9o-Rr-95A"/>
     </inferredMetricsTieBreakers>
 </document>

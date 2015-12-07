@@ -16,7 +16,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUp(sender: AnyObject) {
         
-//        func sign() {
+
             var user = PFUser()
             user.username = usernameField.text
             user.password = passwordField.text
@@ -30,16 +30,16 @@ class SignUpViewController: UIViewController {
                     
                 } else {
                     
-//                    self.performSegueWithIdentifier("homeFromSignUp", sender: self)
                     self.navigationController?.popToRootViewControllerAnimated(true)
                 }
             }
-//        }
 
     }
        override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
             }
     
 
@@ -48,6 +48,9 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
         }
     
-
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
 
 }

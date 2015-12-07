@@ -31,7 +31,9 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
     
@@ -47,26 +49,9 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-//        if (segue.identifier == "homeFromLogIn") {
-//            // pass data to next view
-//            var hvc = segue.destinationViewController as! HomeViewController;
-//            hvc.navigationItem.hidesBackButton = true
-//            hvc.navigationItem.rightBarButtonItem?.title = "Log out"
-//            hvc.tabBarController?.hidesBottomBarWhenPushed = false
-//            
-//            
-//        }
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
-    */
-
+    
 }
