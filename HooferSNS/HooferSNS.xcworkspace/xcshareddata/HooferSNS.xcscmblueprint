@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AB4E719E5D6FFFFC7B50F6FA5BEC9A8F756A182C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AB4E719E5D6FFFFC7B50F6FA5BEC9A8F756A182C" : 0,
+    "7CFBCE9306B1D8F1CF4D592E9A788CC8740AC857" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "479B28F9-54BB-46AD-8E95-C40DDDB9B380",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AB4E719E5D6FFFFC7B50F6FA5BEC9A8F756A182C" : "HooferTracking\/",
+    "7CFBCE9306B1D8F1CF4D592E9A788CC8740AC857" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HooferSNS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HooferSNS\/HooferSNS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/astrochipmunk\/CS407",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7CFBCE9306B1D8F1CF4D592E9A788CC8740AC857"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Gao233\/HooferTracking",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB4E719E5D6FFFFC7B50F6FA5BEC9A8F756A182C"
+    }
+  ]
+}
