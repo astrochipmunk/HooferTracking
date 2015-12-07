@@ -16,4 +16,5 @@ target 'HooferSNSUITests' do
 end
 
 pod 'Parse'
-
+pod 'Google/SignIn'
+pod 'GoogleMaps'

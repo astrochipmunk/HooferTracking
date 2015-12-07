@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Google
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Parse.
         Parse.setApplicationId("LpM4HoiYG3ZherdoRzgVLXDXxHoMyn45Lh5KFXux",
             clientKey: "STfgmJanIS6b37j8LEemUw3PMg8odyUdaZZ2ApbI")
+        
+        //Google API Key
+        
+        GMSServices.provideAPIKey("AIzaSyB7wmscUrD8yvEoG0vd0GCTT2pcX0ldIjw");
         
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
